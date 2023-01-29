@@ -12,12 +12,28 @@
     <!-- href (hypertext references). Nilai dari atribut href berupa alamat dari halaman yang ingin dituju cotoh kita akan ke webpage materi ke satu -->
     <a href="1paragraf-element.html"
       >Menuju ke materi paragraf element sebelumnya</a
-    >
+    ><br />
     <!-- alamat relatif -->
     <a href="../1head-element/1meta-element.html"
       >Menuju ke chapter 1 head element materi ke satu</a
-    >
+    ><br />
     <!-- alamat absolut -->
-    <a href="https://www.google.com/">Menuju ke halaman google</a>
+    <a href="https://www.google.com/">Menuju ke halaman google</a><br />
+    <!-- tag <a> juga bisa digunakan untuk membuat link ke bagian lain pada halaman yang sama -->
+    <a href="#contact-us">Contact Us</a>
+    <!-- section contact -->
+    <section
+      id="contact-us"
+      style="
+        margin-top: 1000px;
+        margin-bottom: 40px;
+        color: red;
+        font-size: large;
+      "
+    >
+      <p>Ini adalah halaman yang dituju oleh Anchor element "Contac Us"</p>
+    </section>
+
+    <!-- contoh Atribut target pada tag <a> digunakan untuk menentukan pada jendela mana halaman web akan ditampilkan. Nilai yang bisa digunakan untuk atribut ini adalah _self, _blank, _parent, _top -->
   </body>
 </html>
