@@ -34,6 +34,15 @@
       <p>Ini adalah halaman yang dituju oleh Anchor element "Contac Us"</p>
     </section>
 
-    <!-- contoh Atribut target pada tag <a> digunakan untuk menentukan pada jendela mana halaman web akan ditampilkan. Nilai yang bisa digunakan untuk atribut ini adalah _self, _blank, _parent, _top -->
+    <!-- Atribut target pada tag <a> digunakan untuk menentukan jendela mana halaman web akan ditampilkan. Value yang bisa digunakan untuk atribut ini adalah _self, _blank, _parent, _top -->
+    <!-- atribut target="_self", maka web browser akan menampilkan halaman link di dalam jendela saat ini tidak perlu ditulis puh tidak apa karena jenisnya default -->
+    <a href="https://www.google.com/" target="_self">Menuju ke google</a>
+    <!-- Atribut target="_blank" akan menampilkan halaman link di dalam tab baru web browser -->
+    <a href="https://www.google.com/" target="_blank">Menuju ke google</a>
+
+    <!-- Atribut rel adalah singkatan dari relationship. Atribut ini digunakan untuk menyatakan bagaimana hubungan halaman saat ini dengan halaman yang akan di-link-kan, lebih ditujukan kepada "robot" mesin pencari seperti google, bukan untuk pengunjung -->
+    <a href="https://id.wikipedia.org/wiki/Halaman_Utama" rel="nofollow"
+      >Yang misalnya tidak sebagai target pencarian mesin google</a
+    >
   </body>
 </html>
