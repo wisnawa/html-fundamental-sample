@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      ul {
+        font-size: 30px;
+      }
+      ul#navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul#navbar li {
+        float: left;
+      }
+      ul#navbar a {
+        text-decoration: none;
+        color: green;
+        padding: 2px 15px 15px;
+        height: 20px;
+        display: block;
+        background-color: rgb(231, 170, 37);
+      }
+      ul#navbar a:hover {
+        color: aqua;
+        border: 2px solid aqua;
+      }
+    </style>
+    <title>Unordered List</title>
+  </head>
+  <body>
+    <h1>3.2 Unordered List</h1>
+    <!-- unordered list adalah list yang tidak memerlukan urutan. Biasanya list ini digunakan jika posisi daftar tidak berpengaruh. -->
+    <h2>List Project Web Client Names</h2>
+    <ul>
+      <li>CV Iswahyudi (Persero) Tbk</li>
+      <li>CV Rajasa</li>
+      <li>PD Laksmiwati Padmasari</li>
+      <li>PD Najmudin</li>
+    </ul>
+    <ul>
+      <li type="circle">CV Iswahyudi (Persero) Tbk</li>
+      <li type="circle">CV Rajasa</li>
+      <li type="circle">PD Laksmiwati Padmasari</li>
+      <li type="circle">PD Najmudin</li>
+    </ul>
+    <ul>
+      <li type="square">CV Iswahyudi (Persero) Tbk</li>
+      <li type="square">CV Rajasa</li>
+      <li type="square">PD Laksmiwati Padmasari</li>
+      <li type="square">PD Najmudin</li>
+    </ul>
+    <!-- tag element ul dengan li yang memiliki atribut type sebaiknya tidak ditunakan sebagai gantinya bisa menggunakan style css -->
+    <ul>
+      <span>Menggunakan list cricle dari CSS</span>
+      <li style="list-style-type: circle">CV Iswahyudi (Persero) Tbk</li>
+      <li style="list-style-type: circle">CV Rajasa</li>
+      <li style="list-style-type: circle">PD Laksmiwati Padmasari</li>
+      <li style="list-style-type: circle">PD Najmudin</li>
+    </ul>
+    <ul id="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
+  </body>
+</html>

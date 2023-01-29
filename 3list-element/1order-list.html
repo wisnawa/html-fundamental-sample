@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order List</title>
+  </head>
+  <body>
+    <h1>3.1 Order List</h1>
+    <!-- Ordered list adalah list yang berurutan. List ini menggunakan angka atau huruf sebagai penentu urutan. Ordered list cocok digunakan untuk daftar yang harus tersusun berdasarkan kronologis seperti instruksi atau daftar kegiatan. -->
+    <h3>Our Teams Frontend Developer Name</h3>
+    <ol>
+      <li>Name: Gadang Halim</li>
+      <li>Name: Purwanto Pangestu</li>
+      <li>Name: Eli Nuraini</li>
+      <li>Name: Adiarja Salahudin</li>
+      <li>Name: Dinda Winarsih</li>
+    </ol>
+    <!--  Terdapat 5 jenis type yang tersedia di dalam HTML:
+        • type="a", menggunakan huruf kecil sebagai penanda list.
+        • type="A", menggunakan huruf besar sebagai penanda list.
+        • type="i", menggunakan angka romawi kecil sebagai penanda list.
+        • type="I", menggunakan angka romawi besar sebagai penanda list.
+        • type="1", menggunakan angka desimal sebagai penanda list, ini adalah pilihan default jika atribut type tidak ditulis -->
+    <ol>
+      <li type="A">
+        Alamat: Ds. Rumah Sakit No. 575, Padangpanjang 82720, Lampung
+      </li>
+      <li type="A">Alamat: Kpg. Baan No. 646, Lubuklinggau 95135, Bali</li>
+      <li type="A">Alamat: Jln. Bakit No. 232, Lubuklinggau 58254, JaTeng</li>
+      <li type="A">Alamat: Ds. Zamrud No. 217, Probolinggo 21799, SulTra</li>
+      <li type="A">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+    </ol>
+    <ol>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li type="a">Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+    </ol>
+    <ol type="I">
+      <li>Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li>Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li>Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li>Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+      <li>Alamat: Jln. Industri No. 219, Banjar 10459, KalTim</li>
+    </ol>
+    <!-- dimulai dengan type data number 6 < next number -->
+    <ol type="1" start="6">
+      <li>Name: Adiarja Salahudin</li>
+      <li>Name: Adiarja Salahudin</li>
+      <li>Name: Adiarja Salahudin</li>
+      <li>Name: Adiarja Salahudin</li>
+      <li>Name: Adiarja Salahudin</li>
+    </ol>
+    <!-- membuat list yang juga memiliki list di dalamnya, atau dikenal dengan istilah nested list -->
+    <h3>Our teams Name, address, phone number</h3>
+    <ol type="1">
+      <li>
+        Name: Adiarja Salahudin
+        <ol type="A">
+          <li>Alamat:</li>
+          <ol type="I">
+            <li>Jln. Industri No. 219, Banjar 10459, KalTim</li>
+            <li>Jln. Bakit No. 232, Lubuklinggau 58254, JaTeng</li>
+          </ol>
+          <li>Phone Number:</li>
+          <ol type="I">
+            <li>(+62) 902 9194 304</li>
+            <li>0802 8853 503</li>
+          </ol>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>
