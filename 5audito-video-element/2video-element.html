@@ -4,9 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      video {
+        width: 50%;
+      }
+    </style>
     <title>Video Element</title>
   </head>
   <body>
     <h1>5.2 Video Element</h1>
+    <!-- akan tag <video> untuk men-jalankan video, atribut src untuk menginput lokasi dan nama file video, atribut controls untuk menampilkan tombol play/stop, slider, volume dan timer. -->
+    <span>tag video dengan atribut src dan controls </span><br />
+    <video src="video-file/vid-1.mp4" controls></video>
+    <br />====================================================<br />
+    <!-- tambahan atribut autoplay agar video langsung berjalan ketika halaman ditampilka biasanya efek ini tidak akan berjalan karena web browser akan menghentikannya secara outomatis -->
+    <span>tag video dengan atribut tambahan yaitu loop</span><br />
+    <video src="video-file/vid-1.mp4" autoplay controls></video>
+    <br />====================================================<br />
+    <!-- Atribut loop akan membuat video berulang otomatis ketika sampai di akhir durasi -->
+    <span>tag video dengan atribut tambahan loop</span><br />
+    <video src="video-file/vid-1.mp4" loop controls></video>
+    <br />====================================================<br />
+    <!-- Kita bisa menambahkan atribut mute untuk mematikan volume. Walaupun begitu, pengguna bisa memperbesar volume melalui tombol yang tersedia -->
+    <span>tag video dengan atribut tambahan muted</span><br />
+    <video src="video-file/vid-1.mp4" muted controls></video>
+    <br />====================================================<br />
+    <!-- sama seperti tag audio atribut preload dengan value none tidak akan melakukan buffering video sampai tombol play di click -->
+    <span>tag video dengan atribut preload value none</span><br />
+    <video controls preload="none">
+      <source src="video-file/vid-1.mp4" />
+    </video>
+    <br />====================================================<br />
+    <!-- akan melakukan buffering video beberapa detik dan akan tampil durasi video times-nya -->
+    <span>tag video dengan atribut preload value auto</span><br />
+    <video controls preload="auto">
+      <source src="video-file/vid-1.mp4" />
+    </video>
+    <br />====================================================<br />
+    <!-- hampir mirip dengan atribut preload dengan value auto -->
+    <span>tag video dengan atribut preload value metadata</span><br />
+    <video controls preload="metadata">
+      <source src="video-file/vid-1.mp4" />
+    </video>
+    <br />====================================================<br />
+    <!-- dengan tambahan atribut width and height akan menambah ukuran dari layar video yang diinginkan dan memiliki poster untuk gambar video-->
+    <span>tag video dengan atribut widht and height</span><br />
+    <video
+      controls
+      preload="metadata"
+      poster="../4image-releated-element/img/11-categoryimagelist.jpg"
+      width="200"
+    >
+      <source src="video-file/vid-1.mp4" />
+    </video>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />====================================================<br />
   </body>
 </html>
