@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Element</title>
+  </head>
+  <body>
+    <h1>5.1 Audio Element</h1>
+    <!-- penulisan tag <audio> mirip dengan tag <img>, namun tag ini harus ditulis berpasangan dengan tag penutup </audio>. -->
+    <audio src="audio-file/Ice&Fire-King_Canyon.mp3"></audio>
+    <!-- fungsi atribut controls untuk menampilkan control pada audi player -->
+    <span>tag audio dentan atribut controls</span><br />
+    <audio src="audio-file/Ice&Fire-King_Canyon.mp3" controls></audio><br />
+    <!-- fungsi atribut autoplay autoplay digunakan tanpa atribut controls, maka anda dapat membuat halaman web dengan audio yang langsung berjalan. Tapi efek dari auto play di hentikan secara otomatis oleh web browser sehingga seperti tidak terjadi apa-apa -->
+    <p style="margin: 10px 15px 3px">Tag audio ini memiliki atribut autoplay</p>
+    <audio src="audio-file/Ice&Fire-King_Canyon.mp3" autoplay></audio
+    ><br />=======================================<br />
+
+    <!-- fungsi atribut loop silahkan lompati musik hingga di akhir durasi, dan file audio akan otomatis diputar kembali dari awal-->
+    <span>tag audio dengan atribut loop </span><br /><br />
+    <audio src="audio-file/Ice&Fire-King_Canyon.mp3" loop controls></audio>
+    <br />==========================================<br />
+    <!-- tag audio atribut muted. Jika pengguna ingin mendengarkan musik, ia tinggal memperbesar volume dari tombol audio -->
+    <span>Tag audio dengan atribut muted</span><br />
+    <audio src="audio-file/Ice&Fire-King_Canyon.mp3" controls muted></audio>
+    <br />============================================<br />
+    <!-- Tag <audio> menyediakan atribut preload yang digunakan untuk mengatur cara web browser mendowload file audio ketika halaman web dijalankan. Atau bisa juga dipahami dengan cara web browser men-buffer file audio tersebut -->
+    <!-- preload="auto" auto adalah value default dari atribut preload, dengan value auto ini akan terjadi proses preload buffering file audio beberapa detik -->
+    <span>tag audio dengan atribut preload value auto</span><br />
+    <audio
+      src="audio-file/Ice&Fire-King_Canyon.mp3"
+      controls
+      preload="auto"
+    ></audio>
+    <br />========================================================<br />
+    <!-- preload="none" none adalah value untuk menginstruksikan web browser untuk tidak mem-buffer file audio hingga tombol play di-klik, setelah tombol play click akan terjadi buffering start -->
+    <span>tag audio dengan atribut preload value none</span><br />
+    <audio
+      src="audio-file/Ice&Fire-King_Canyon.mp3"
+      controls
+      preload="none"
+    ></audio>
+    <br />==========================================================<br />
+    <!-- preload="metadata" metadata adalah value yang mirip dengan auto value. -->
+    <span>tag audio dengan atribut preload value metadata</span><br />
+    <audio
+      src="audio-file/Ice&Fire-King_Canyon.mp3"
+      controls
+      preload="metadata"
+    ></audio>
+    <br />=========================================================<br />
+    <!-- ini solusi untuk mengatasi keterbatasan dukungan format, kita bisa menggunakan beberapa format untuk file audio yang sama. Web browser kemudian akan memilih format mana yang bisa digunakan dengan cara dibawa ini web browser akan milih format mana yang bisa digunakan. -->
+    <audio controls preload="auto" loop>
+      <source src="audio-file/Ice&Fire-King_Canyon.mp3" type="audio/mp3" />
+      <source src="audio-file/Ice&Fire-King_Canyon.mp3" type="audio/mp3" />
+    </audio>
+    <br /><br /><br />
+    <br />==========================================================<br />
+  </body>
+</html>
