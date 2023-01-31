@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table#kotak {
+        border: 1px solid black;
+        padding: 1px;
+        background-color: yellow;
+      }
+      table#kotak td {
+        border: 1px solid black;
+      }
+      table#kotak tr td.column2 {
+        background-color: pink;
+      }
+      table#kotak tr td.column1-3 {
+        background-color: pink;
+      }
+    </style>
+    <title>Atribut Bgcolor</title>
+  </head>
+  <body>
+    <h1>6.6 Atribut Bgcolor</h1>
+    <!-- menggunakan atribut bgcolor, karena inilah cara paling cepat. Atribut ini sudah dinyatakan deprecated dan sangat disarankan untuk beralih ke CSS. -->
+    <table border="1" bgcolor="yellow">
+      <tr>
+        <td>row 1, column 1</td>
+        <td bgcolor="pink">row 1, column 2</td>
+        <td>row 1, column 3</td>
+      </tr>
+      <tr>
+        <td bgcolor="pink">row 2, column 1</td>
+        <td>row 2, column 2</td>
+        <td bgcolor="pink">row 2, column 3</td>
+      </tr>
+    </table>
+    <br />============================================<br />
+    <!-- kita nggunakan css -->
+    <table id="kotak">
+      <tr>
+        <td>row 1, column 1</td>
+        <td class="column2">row 1, column 2</td>
+        <td>row 1, column 3</td>
+      </tr>
+      <tr>
+        <td class="column1-3">row 2, column 1</td>
+        <td>row 2, column 2</td>
+        <td class="column1-3">row 2, column 3</td>
+      </tr>
+    </table>
+  </body>
+</html>
