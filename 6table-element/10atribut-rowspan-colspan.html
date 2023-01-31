@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table#table-main {
+        border-collapse: collapse;
+        border-spacing: 3px;
+        border-style: solid;
+        border-color: red;
+        /* border-width: 1px; */
+      }
+      table#table-main tr td {
+        border-style: solid;
+        border-color: green;
+        border-width: 1px;
+      }
+    </style>
+    <title>Atribut Rowspan dan Colspan</title>
+  </head>
+  <body>
+    <h1>6. 10 Atribut Rowspan dan Colspan</h1>
+    <!-- Atribut rowspan digunakan untuk menggabungkan sel tabel dalam bentuk baris, sedangkan atribut colspan digunakan untuk membentuk kolom yang lebih panjang. -->
+    <table border="1">
+      <tr>
+        <td rowspan="2">row 1, column 1</td>
+        <td>row 1, column 2</td>
+        <td>row 1, column 3</td>
+      </tr>
+      <tr>
+        <td>row 2, column 1</td>
+        <td>row 2, column 2</td>
+        <td>row 2, column 3</td>
+      </tr>
+      <tr>
+        <td colspan="2">row 3, column 1</td>
+        <td>row 3, column 2</td>
+        <td>row 3, column 3</td>
+      </tr>
+    </table>
+    <br />============================================<br />
+    <h3>Contoh Pembuatan Nota Penjualan</h3>
+    <table id="table-main">
+      <tr>
+        <td rowspan="2" style="text-align: center">Nomor</td>
+        <td rowspan="2" style="text-align: center">Barang</td>
+        <td colspan="2" style="text-align: center">Satuan Jumlah</td>
+        <td rowspan="2" style="width: 100px; text-align: center">Jumlah</td>
+      </tr>
+      <tr>
+        <td style="padding: 1px 20px">jumlah</td>
+        <td style="padding: 1px 20px">Satuan</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ayam Bakar Madu</td>
+        <td style="height: 100px; text-align: center">2</td>
+        <td>20.000</td>
+        <td>40.000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mie Ayam Bakso</td>
+        <td style="text-align: center">4</td>
+        <td>10.000</td>
+        <td>40.000</td>
+      </tr>
+    </table>
+  </body>
+</html>
