@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      thead tr {
+      }
+      thead th {
+        border-style: solid;
+        border-color: green;
+        border-width: 5px;
+      }
+      tbody td {
+        border-style: solid;
+        border-color: red;
+      }
+    </style>
+    <title>Mengisi Sel Table</title>
+  </head>
+  <body>
+    <h1>6.15 Mengisi Sel Table</h1>
+    <!-- saya akan membuat Teams Frontend Develoment -->
+    <table>
+      <caption
+        style="margin-bottom: 4px; font-weight: bolder; font-size: large"
+      >
+        Our ID Names from Team Frontend Develoment
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Foto</th>
+          <th colspan="2">Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Puji Aryani</td>
+          <td>
+            Ki. Casablanca No. 928, Administrasi Jakarta Pusat 65359, SulTra
+          </td>
+          <td>patricia67@gmail.co.id</td>
+          <td><img src="img/06.webp" alt="" width="100" /></td>
+          <td style="border-right-style: hidden"><button>Edit</button></td>
+          <td><button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Titi Kusmawati</td>
+          <td>Jr. Bahagia No. 523, Sungai Penuh 83948, SumUt</td>
+          <td>perkasa.wijaya@yahoo.co.id</td>
+          <td><img src="img/08.webp" alt="" width="100" /></td>
+          <td style="border-right-style: hidden"><button>Edit</button></td>
+          <td><button>Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
