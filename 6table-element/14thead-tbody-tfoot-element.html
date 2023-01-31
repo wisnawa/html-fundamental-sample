@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      thead tr {
+        border-style: solid;
+        border-width: 5px;
+      }
+      thead th {
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+      }
+      thead th.header-data {
+        border-style: solid;
+        border-width: 5px;
+        width: 150px;
+      }
+      tbody tr {
+        border-style: solid;
+        /* border-width: 3px; */
+      }
+      tbody td {
+        border-style: solid;
+        border-width: 3px;
+        border-color: black;
+      }
+      tfoot tr {
+        border-style: solid;
+      }
+      tfoot th {
+        /* border-style: none; */
+        border-width: 3px;
+        border-bottom-style: solid;
+        border-color: black;
+      }
+      tfoot td {
+        border-style: solid;
+        border-width: 3px;
+        border-color: black;
+      }
+    </style>
+    <title>Thead, Tbody dan Tfoot Element</title>
+  </head>
+  <body>
+    <h1>6.14 Thead, Tbody dan Tfoot Element</h1>
+    <!-- an namanya, tag-tag ini digunakan untuk menandakan bagian mana yang berfungsi sebagai judul tabel (head), isi tabel (body), dan penutup tabel (foot).  -->
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th rowspan="2" class="header-data">Nama Barang</th>
+          <th colspan="2" class="header-data">Jumlah Dan Harga Satuan</th>
+          <th rowspan="2" class="header-data">Total Barang</th>
+        </tr>
+        <tr>
+          <th>Jumlah</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bakso Ayam Telor</td>
+          <td>3</td>
+          <td>5.000</td>
+          <td>15.000</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Bakso Ayam Telor</td>
+          <td>3</td>
+          <td>5.000</td>
+          <td>15.000</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Bakso Ayam Telor</td>
+          <td>3</td>
+          <td>5.000</td>
+          <td>15.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th
+            colspan="2"
+            style="border-left-style: solid; border-color: black"
+          ></th>
+          <th colspan="2">Grand Total</th>
+          <td>Rp 15.000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

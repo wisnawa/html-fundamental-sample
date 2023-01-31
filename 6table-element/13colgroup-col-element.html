@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colgroup dan Col Element</title>
+  </head>
+  <body>
+    <h1>6.13 Colgroup dan Col Element</h1>
+    <!-- , HTML menyediakan tag <colgroup> dan tag <col>. Kedua tag ini berfungsi sebagai ‘pengait’ untuk seluruh kolom. Tag ini ditulis sebelum tag <tr> pertamama -->
+    <table border="2">
+      <colgroup>
+        <col style="background-color: yellow" />
+        <col />
+        <col style="background-color: yellow" />
+        <col />
+        <col style="background-color: yellow" />
+      </colgroup>
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone Nomber</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Paramita Zulaika</td>
+        <td>Ds. Baiduri No. 522, Palangka Raya 61187, SulTra</td>
+        <td>allalalalala@gmail.com</td>
+        <td>122334444</td>
+      </tr>
+    </table>
+    <br />==================================================================<br />
+    <table
+      style="
+        border-style: solid;
+        border-color: green;
+        border-collapse: collapse;
+      "
+    >
+      <tr>
+        <colgroup>
+          <col style="background-color: yellow" />
+          <col style="background-color: aquamarine" />
+        </colgroup>
+        <th
+          style="
+            text-align: start;
+            border-style: solid;
+            border-width: 2px;
+            border-color: green;
+          "
+        >
+          Name:
+        </th>
+        <td>Puji Aryani</td>
+      </tr>
+      <tr>
+        <th
+          style="
+            text-align: start;
+            border-style: solid;
+            border-width: 2px;
+            border-color: green;
+          "
+        >
+          Address:
+        </th>
+        <td>Kpg. Kartini No. 772, Lhokseumawe 55847, Riau</td>
+      </tr>
+      <tr>
+        <th
+          style="
+            text-align: start;
+            width: 150px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: green;
+          "
+        >
+          Phone Number:
+        </th>
+        <td>(+62) 721 6633 165</td>
+      </tr>
+    </table>
+  </body>
+</html>
