@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Element Type Text</title>
+  </head>
+  <body>
+    <h1>7.2 Input Element Type Text(text box)</h1>
+    <!-- Text box disebut juga dengan input type text, karena untuk membuat text box, kita menambahkan atribut type="text" pada tag <input>. -->
+    <form action="formproses.php" method="get">
+      <input type="text" />
+    </form>
+    <br />=============================================<br />
+    <!-- input element dengan atribut type -->
+    <form action="formproses.php" method="post">
+      <p>
+        Name:
+        <input type="text" />
+      </p>
+      <p>
+        Address:
+        <input type="text" />
+      </p>
+    </form>
+    <br />================================================<br />
+    <!-- input element dengan atribut name -->
+    <form action="formproses.php" method="post">
+      <p>
+        Name:
+        <input type="text" name="name" />
+      </p>
+      <p>
+        Address:
+        <input type="text" name="address_user" />
+      </p>
+    </form>
+    <br />================================================<br />
+    <!-- input element dengan atribut value -->
+    <form action="formproses.php" method="get">
+      <p>
+        Name:
+        <input type="text" name="name" value="I Putu Gede Wisnawa" />
+      </p>
+      <p>
+        Address:
+        <input
+          type="text"
+          name="address_user"
+          value="Jl WR Suprepatman no 123 Denpasar Bali"
+        />
+      </p>
+    </form>
+    <br />================================================<br />
+    <!-- input element dengan atribut size, ini menentukan panjang text box diset tampil hanya 4 character yang terlihat di layar-->
+    <form action="formproses.php" method="get">
+      <p>Name: <input type="text" name="name" size="4" /></p>
+      <p>Address: <input type="text" name="address_user" size="16" /></p>
+    </form>
+    <br />================================================<br />
+    <!-- input element dengan atribut readonly -->
+    <form action="formproses.php" method="post">
+      <p>
+        Name:
+        <input type="text" name="name" value="I Putu Gede Wisnawa" readonly />
+      </p>
+      <p>Address: <input type="text" name="adress_user" /></p>
+    </form>
+  </body>
+</html>
