@@ -17,6 +17,21 @@
         border-style: solid;
         border-color: red;
       }
+      button.edit {
+        border-style: solid;
+        border-radius: 5px;
+        border-color: green;
+        background-color: green;
+      }
+      button.delete {
+        border-style: solid;
+        border-radius: 5px;
+        border-color: red;
+        background-color: red;
+      }
+      button {
+        color: white;
+      }
     </style>
     <title>Mengisi Sel Table</title>
   </head>
@@ -31,6 +46,7 @@
       </caption>
       <thead>
         <tr>
+          <th>No</th>
           <th>Name</th>
           <th>Address</th>
           <th>Email</th>
@@ -40,30 +56,39 @@
       </thead>
       <tbody>
         <tr>
+          <td>1.</td>
           <td>Puji Aryani</td>
           <td>
             Ki. Casablanca No. 928, Administrasi Jakarta Pusat 65359, SulTra
           </td>
           <td>patricia67@gmail.co.id</td>
           <td><img src="img/06.webp" alt="" width="100" /></td>
-          <td style="border-right-style: hidden"><button>Edit</button></td>
-          <td><button>Delete</button></td>
+          <td style="border-right-style: hidden">
+            <button class="edit">Edit</button>
+          </td>
+          <td><button class="delete">Delete</button></td>
         </tr>
         <tr>
+          <td>2.</td>
           <td>Titi Kusmawati</td>
           <td>Jr. Bahagia No. 523, Sungai Penuh 83948, SumUt</td>
           <td>perkasa.wijaya@yahoo.co.id</td>
           <td><img src="img/08.webp" alt="" width="100" /></td>
-          <td style="border-right-style: hidden"><button>Edit</button></td>
-          <td><button>Delete</button></td>
+          <td style="border-right-style: hidden">
+            <button class="edit">Edit</button>
+          </td>
+          <td><button class="delete">Delete</button></td>
         </tr>
         <tr>
+          <td>3.</td>
           <td>Asmadi Gunawan</td>
           <td>Jln. Urip Sumoharjo No. 255, Ambon 50527, KalUt</td>
           <td>crahayu@gmail.com</td>
           <td><img src="img/27.webp" alt="" width="100" /></td>
-          <td style="border-right-style: hidden"><button>Edit</button></td>
-          <td><button>Delete</button></td>
+          <td style="border-right-style: hidden">
+            <button class="edit">Edit</button>
+          </td>
+          <td><button class="delete">Delete</button></td>
         </tr>
       </tbody>
     </table>
