@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Dengan Menggunakan Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border-style: solid;
+      }
+      th {
+        border-style: solid;
+      }
+      tr.navbar th {
+        border-width: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>6.16 Layout Dengan Menggunakan Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th
+            colspan="9"
+            style="font-weight: 400 bold; font-size: large; text-align: start"
+          >
+            Judul Artikel
+          </th>
+        </tr>
+        <tr>
+          <th colspan="9" style="font-weight: 200; text-align: start">
+            Tema Artikel
+          </th>
+        </tr>
+        <tr class="navbar">
+          <th>Home</th>
+          <th>Blog</th>
+          <th>Tutorial</th>
+          <th>Contact Us</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Judul 1</th>
+          <th colspan="4" rowspan="5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+            obcaecati harum quos minus debitis voluptates beatae at molestiae
+            excepturi totam.
+          </th>
+          <th rowspan="5">kosong</th>
+        </tr>
+        <tr>
+          <th>Judul 2</th>
+        </tr>
+        <tr>
+          <th>Judul 3</th>
+        </tr>
+        <tr>
+          <th>Judul 4</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
