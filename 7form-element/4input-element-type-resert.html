@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Element Type Reset</title>
+  </head>
+  <body>
+    <h1>7.4 Input Element Type Reset</h1>
+    <!--  tombol reset untuk mengosongkan isi form. Penggunaannya mirip dengan tombol submit, namun kali ini kita menggunakan atribut type="reset". -->
+    <form action="formproses.php" method="get">
+      <p>Name: <input type="text" name="name" size="15" /></p>
+      <p>Address: <input type="text" name="address_user" size="30" /></p>
+      <table>
+        <tr>
+          <th>
+            <p style="margin: 1px 2px">
+              <input
+                type="reset"
+                value="Reset"
+                style="
+                  color: red;
+                  background-color: yellow;
+                  border-style: solid;
+                  border-width: 1px;
+                  border-color: red;
+                  border-radius: 5px;
+                "
+              />
+            </p>
+          </th>
+          <th>
+            <p><input type="submit" value="Sending Data" /></p>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
