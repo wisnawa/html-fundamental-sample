@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Element Type Radio</title>
+  </head>
+  <body>
+    <h1>7.7 Input Element Type Radio</h1>
+    <!-- membuat tag input dengan atribut type value radio, hanya bisa memilih salah satu nilai saja. -->
+    <form action="formproses.php" method="get">
+      <table>
+        <thead>
+          <tr>
+            <h5>Chose one place for camping</h5>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="text-align: start">
+              <input type="radio" name="pilihan" value="Kuta" />Kuta
+            </th>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <input type="radio" name="pilihan" value="Bedugul" />Bedugul
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input type="radio" name="pilihan" value="Kitamani" />Kintamani
+            </th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th><input type="reset" value="Reset" /></th>
+            <th><input type="submit" value="Sending Data" /></th>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>

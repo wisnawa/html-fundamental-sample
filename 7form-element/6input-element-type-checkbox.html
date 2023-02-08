@@ -8,6 +8,74 @@
   </head>
   <body>
     <h1>7.6 Input Element Type Checkbox</h1>
-    <!--  -->
+    <!-- . Untuk membuat checkbox kita menggunakan atribut type="checkbox" pada tag <input>. -->
+    <h3>Teams Work</h3>
+    <form action="formproses.php" method="get">
+      <p>
+        <input type="checkbox" name="pilihan_1" value="Lutfan Permadi" />Lutfan
+        Permadi
+      </p>
+      <p>
+        <input type="checkbox" name="pilihan_2" value="Warsa Sirait" />Warsa
+        Sirait
+      </p>
+      <p>
+        <input type="checkbox" name="pilihan_3" value="Tedi Natsir" />Tedi
+        Natsir
+      </p>
+      <p>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <br />=======================================================<br />
+    <form action="formproses.php" method="get">
+      <table>
+        <thead>
+          <caption>
+            Chose Your teams
+          </caption>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="text-align: start">
+              <input
+                type="checkbox"
+                name="pilihan_1"
+                value="Lutfan Permadi"
+              />Lutfan Permadi
+            </th>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <input
+                type="checkbox"
+                name="pilihan_2"
+                value="Warsa Sirait"
+              />Warsa Sirait
+            </th>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <input
+                type="checkbox"
+                name="pilihan_2"
+                value="Warsa Sirait"
+              />Tono
+            </th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>
+              <input type="reset" value="Reset" />
+            </th>
+            <th>
+              <input type="submit" value="Sending Data" />
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
   </body>
 </html>
