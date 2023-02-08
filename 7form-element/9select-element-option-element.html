@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Element dan Option Element</title>
+  </head>
+  <body>
+    <h1>7.9 Select Element dan Option Element</h1>
+    <!-- . Untuk membuatnya, kita menggunakan 2 buah element, yakni tag <select> sebagai container, dan tag <option> untuk membuat pilihan -->
+    <h4>Dengan atribut value</h4>
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="">
+        <option value="HTML 5">HTML 5</option>
+        <option value="CSS">CSS</option>
+        <option value="Java Script">Java Script</option>
+        <option value="PHP">PHP</option>
+        <option value="Java">Java</option>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <br />==========================================<br />
+    <!-- tag select serbagi container dan tag option tanpa atribut value maka nilai yang dikirim adalah teks diantara tag <option> -->
+    <h4>Tanpa menggunakan atribut value</h4>
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="">
+        <option>HTML 5</option>
+        <option>CSS</option>
+        <option>Java Script</option>
+        <option>PHP</option>
+        <option>Java</option>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <br />==========================================<br />
+    <!-- tag select sebagai container dan tag option dengan atribut selected, ini akan membuat pilihan secara default -->
+    <h4>Dengan atribut selected</h4>
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="">
+        <option value="HTML 5">HTML 5</option>
+        <option value="CSS" selected>CSS</option>
+        <option value="Java Script">Java Script</option>
+        <option value="PHP">PHP</option>
+        <option value="Java">Java</option>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="">
+        <option selected>-- Choosing Your Skill--</option>
+        <option value="HTML 5">HTML 5</option>
+        <option value="CSS">CSS</option>
+        <option value="Java Script">Java Script</option>
+        <option value="PHP">PHP</option>
+        <option value="Java">Java</option>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <br />==========================================<br />
+    <!-- dengan menambahkan atribut size -->
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="" size="6">
+        <option selected>-- Choosing Your Skill--</option>
+        <option value="HTML 5">HTML 5</option>
+        <option value="CSS">CSS</option>
+        <option value="Java Script">Java Script</option>
+        <option value="PHP">PHP</option>
+        <option value="Java">Java</option>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>

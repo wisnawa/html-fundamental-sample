@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optgroup Element</title>
+  </head>
+  <body>
+    <h1>7.10 Optgroup Element</h1>
+    <!-- pengelompokan pilihan tag <option> menggunakan tag <optgroup> dengan atribut label -->
+    <form action="formproses.php" method="get">
+      <select name="pilihan_skill" id="">
+        <optgroup label="Frontend">
+          <option value="HTML 5">HTML 5</option>
+          <option value="CSS">CSS</option>
+          <option value="Java Script">Java Script</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option value="Java Script">Java Script</option>
+          <option value="PHP">PHP</option>
+          <option value="NodeJS">NodeJS</option>
+        </optgroup>
+        <optgroup label="Data Base">
+          <option value="Mysql">Mysql</option>
+          <option value="SQL">SQL</option>
+          <option value="NoSQL">NoSQL</option>
+          <option value="PostgreSQL">PostgreSQL</option>
+        </optgroup>
+      </select>
+      <p>
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>
