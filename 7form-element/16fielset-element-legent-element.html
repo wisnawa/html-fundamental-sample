@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fieldset Element dan Legend Element</title>
+  </head>
+  <body>
+    <h1>7.16 Fieldset Element dan Legend Element</h1>
+    <!-- Tag <fieldset> dan tag <legend> digunakan untuk mempercantik tampilan form dengan mengelompokkan objek form sesuai dengan pembagiannya -->
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>Data ID</legend>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" name="user_name" id="name" size="29" />
+        </p>
+        <p>
+          <label for="address">Address:</label>
+          <textarea
+            name="user_address"
+            id="address"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Bidang Keahlian yang Dimiliki</legend>
+        <p>
+          <input type="checkbox" name="skill_1" id="html5" value="HTML 5" />
+          <label for="html5">HTML 5</label>
+        </p>
+        <p>
+          <input type="checkbox" name="skill_2" id="css" value="CSS" />
+          <label for="css">CSS</label>
+        </p>
+        <p>
+          <input type="checkbox" name="skill_3" id="js" value="Java Script" />
+          <label for="js" style="font-weight: bold">Java Script</label>
+        </p>
+        <p>
+          <input type="checkbox" name="skill_4" id="mysql" value="MySQL" />
+          <label for="mysql">MySQL</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Click to process</legend>
+        <p>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Sending Data" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
