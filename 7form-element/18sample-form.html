@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form Sample</title>
+  </head>
+  <body>
+    <h1>Registration Form Sample</h1>
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>Your Data Identity</legend>
+        <table>
+          <tr>
+            <th style="text-align: start">
+              <label for="name_user">Name:</label>
+            </th>
+            <td style="padding-left: 28px">
+              <input type="text" name="name_user" id="name_user" size="25" />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="phone">Phone Number:</label></th>
+            <td style="padding-left: 28px">
+              <input type="text" name="phone_number" id="phone" size="25" />
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>Tanggal Lahir:</th>
+            <td style="padding-left: 28px">
+              <select name="day" id="day">
+                <optgroup label="Day">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </optgroup>
+              </select>
+              <select name="month" id="month">
+                <optgroup label="Month">
+                  <option value="Januari">Januari</option>
+                  <option value="Februari">Februari</option>
+                  <option value="Maret">Maret</option>
+                  <option value="April">April</option>
+                  <option value="Mei">Mei</option>
+                  <option value="Juni">Juni</option>
+                  <option value="Juli">Juli</option>
+                  <option value="Agustus">Agustus</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </optgroup>
+              </select>
+              <select name="year" id="year">
+                <optgroup label="Year">
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2000">2000</option>
+                  <option value="2000">2000</option>
+                  <option value="2000">2000</option>
+                  <option value="2000">2000</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <label for="address">Address:</label>
+            </th>
+            <td style="padding-left: 28px">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>User Account</legend>
+        <table>
+          <tr>
+            <th style="text-align: start">
+              <label for="user_account">User Name:</label>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="user_account"
+                size="25"
+                id="user_account"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <label for="email">Email:</label>
+            </th>
+            <td>
+              <input type="email" name="email_account" id="email" size="25" />
+            </td>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <label for="passw">Password:</label>
+            </th>
+            <td><input type="password" name="passw" id="passw" size="25" /></td>
+          </tr>
+          <tr>
+            <th><label for="confpass">Confirm Password:</label></th>
+            <td>
+              <input type="password" name="confpass" id="confpass" size="25" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>My Skill Programing</legend>
+        <table style="margin-left: 130px">
+          <tr>
+            <td>
+              <input type="checkbox" name="skill1" id="skill1" value="HTML 5" />
+            </td>
+            <th style="text-align: start">
+              <label for="skill1">HMTL 5</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="skill2" id="skill2" value="CSS" />
+            </td>
+            <th style="text-align: start"><label for="skill2">CSS</label></th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="skill3"
+                id="skill3"
+                value="Java Script"
+              />
+            </td>
+            <th style="text-align: start">
+              <label for="skill3">Java Script</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="skill4" id="skill4" value="PHP" />
+            </td>
+            <th style="text-align: start"><label for="skill4">PHP</label></th>
+          </tr>
+        </table>
+      </fieldset>
+      <p style="margin-left: 22px">
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>
