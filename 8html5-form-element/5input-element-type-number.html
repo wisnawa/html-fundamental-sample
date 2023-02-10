@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Element Type Number</title>
+  </head>
+  <body>
+    <h1>8.5 Input Element Type Number</h1>
+    <!-- tag input dengan atribut type value number, akan mengaktifkan valid false jika yang diiput bukan number -->
+    <!-- tag input dengan tambahan atribut min and max untuk menentukan panjang number validation yang ingin ditentukan -->
+    <!-- tag input dengan atribut step, ini untuk menentukan kelipatan dari angka -->
+    <form action="formproses.php" method="get">
+      <p>
+        <label for="phone">Your Phone Number:</label>
+        <input type="number" name="user_phone" size="5" id="phone" />
+      </p>
+      <p>
+        <label for="age">Your Age:</label>
+        <input
+          type="number"
+          name="user_age"
+          min="2"
+          max="5"
+          step="2"
+          size="5"
+          id="age"
+        />
+      </p>
+      <p>
+        <input type="reset" value="Reset Data" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>
