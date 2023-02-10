@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Input Element Type Date, Datetime, Datetim-local, Time, Month, dan Week
+    </title>
+  </head>
+  <body>
+    <h1>
+      8.8 Input Element Type Date, Datetime, Datetime-local, Time, Month and
+      Week
+    </h1>
+    <!--  HTML5 menyediakan objek form untuk penginputan tanggal (date), dan waktu (time). Tidak hanya 1, tetapi 6 objek form sekaligus, yakni date, time, datetime-local, datetime, month dan week.  -->
+    <form action="formproses.php" method="get">
+      <p>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" />
+      </p>
+      <p>
+        <label for="time"
+          >Time:<input type="time" name="time" id="time"
+        /></label>
+      </p>
+      <p>
+        <label for="date-time-local"
+          >Datetime Local:<input
+            type="datetime-local"
+            name="date-time-local"
+            id="date-time-local"
+        /></label>
+      </p>
+      <p>
+        <label for="date-time"
+          >Datetime:<input type="datetime" name="datetime" id="date-time"
+        /></label>
+      </p>
+      <p>
+        <label for="month">Month:</label>
+        <input type="month" name="month" id="month" />
+      </p>
+      <p>
+        <label for="week">Week:</label>
+        <input type="week" name="week" id="week" />
+      </p>
+      <p>
+        <input type="reset" value="Reset Data" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+    <br />=========================================================<br />
+    <!-- tag input dengan menambahkan atribut min dan max pada penentuan tanggal -->
+    <form action="formproses.php" method="get">
+      <p>
+        <label for="datein">Date In:</label>
+        <input
+          type="date"
+          name="datein"
+          id="datein"
+          min="2023-2-10"
+          max="2023-2-15"
+        />
+      </p>
+      <p>
+        <label for="dateout">Date Out</label>
+        <input
+          type="date"
+          name="dateout"
+          id="dateout"
+          min="2023-2-16"
+          max="2023-2-20"
+        />
+      </p>
+      <p>
+        <input type="reset" value="Reset Data" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>

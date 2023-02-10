@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Autofocus</title>
+  </head>
+  <body>
+    <h1>8.9 Atribut Autofocus</h1>
+    <!-- atribut autofocus membuat cursor teks langsung berada pada object form pertama -->
+    <form action="formproses.php" method="get">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="user_name" id="name" size="30" autofocus />
+      </p>
+      <p>
+        <label for="address">Address:</label>
+        <textarea
+          name="user_address"
+          id="address"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+      <p>
+        <input type="reset" value="Reset Data" />
+        <input type="submit" value="Sending Data" />
+      </p>
+    </form>
+  </body>
+</html>
