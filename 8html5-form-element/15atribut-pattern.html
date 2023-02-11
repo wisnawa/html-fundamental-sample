@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Pattern</title>
+  </head>
+  <body>
+    <h1>8.15 Atribut Pattern</h1>
+    <!-- Atribut pattern digunakan untuk membuat aturan validasi yang kita rancang sendiri dengan regular expression. -->
+    <form action="formproses.php" method="get">
+      <p>
+        <label for="number">ID Number:</label>
+        <!-- masukkan huruf dan angka sebanyak 3 kali -->
+        <input
+          type="text"
+          name="id_number"
+          id="number"
+          size="30"
+          pattern="[A-Z]{3}[0-9]{3}"
+        />
+      </p>
+      <p>
+        <label for="input_data">Input Data:</label
+        ><input type="submit" value="Sending" />
+      </p>
+    </form>
+  </body>
+</html>
