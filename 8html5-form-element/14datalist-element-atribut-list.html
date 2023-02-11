@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist Element dan Atribut List</title>
+  </head>
+  <body>
+    <h1>8.14 Datalist Element dan Atribut List</h1>
+    <!-- tag datalist bisa membuat list suggestion untuk tag input, seperti seraching box pada google akan mengeluarkan beberapa kata suggestion dari google, dari topik yang dicari -->
+    <!-- tag datalist untuk menampung data -->
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>User Profile</legend>
+        <table>
+          <tr>
+            <th>
+              <label for="name" style="margin-right: 129px">Nama:</label>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                size="30"
+                placeholder="insert your name"
+                required
+                autocomplete="off"
+                autofocus
+              />
+            </td>
+          </tr>
+        </table>
+        <table>
+          <th>
+            <label for="tempat_tgl_lahir">Tempat & Tanggal Lahir:</label>
+          </th>
+          <td>
+            <input
+              type="text"
+              name="tempat_lahir"
+              id="tempat_tgl_lahir"
+              placeholder="date of birth"
+              autocomplete="off"
+              list="list_kabupaten_bali"
+            />
+          </td>
+          <td>
+            <select name="day" id="day">
+              <optgroup label="Day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </optgroup>
+            </select>
+          </td>
+          <td>
+            <select name="month" id="month">
+              <optgroup label="Month">
+                <option value="januari">Januari</option>
+                <option value="februari">Februari</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="mey">Mey</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </optgroup>
+            </select>
+          </td>
+          <td>
+            <select name="year" id="year">
+              <optgroup label="Year">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2020">2020</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+              </optgroup>
+            </select>
+          </td>
+        </table>
+        <table style="margin-left: 350px">
+          <tr>
+            <td><input type="reset" value="Reset Data" /></td>
+            <td>
+              <input type="submit" value="Sending Data" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <datalist id="list_kabupaten_bali">
+      <option value="Denpasar" label="Denpasar"></option>
+      <option value="Badung" label="Badung"></option>
+      <option value="Bangli" label="Bangli"></option>
+      <option value="Buleleng" label="Buleleng"></option>
+      <option value="Gianyar" label="Gianyar"></option>
+      <option value="Jembrana" label="Jembrana"></option>
+      <option value="Karangasem" label="Karangasem"></option>
+      <option value="Klungkung" label="Klungkung"></option>
+    </datalist>
+  </body>
+</html>

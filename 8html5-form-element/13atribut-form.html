@@ -9,7 +9,7 @@
   <body>
     <h1>8.13 Atribut Form</h1>
     <!-- tag input dengan menambahkan atribut form kita bisa memproses data walaupun berada diluar blocking element dari tag form -->
-    <form action="formproses.php" method="get">
+    <form action="formproses.php" method="get" id="proses_login">
       <fieldset>
         <legend>Proses Login</legend>
         <table>
@@ -25,6 +25,7 @@
                 size="30"
                 placeholder="youremail@example.com"
                 autocomplete="off"
+                autofocus
                 required
               />
             </td>
@@ -37,25 +38,55 @@
                 name="password"
                 id="password"
                 size="30"
+                minlength="4"
                 placeholder="insert password here!"
                 required
               />
             </td>
           </tr>
           <tr>
-            <th style="border-style: solid">
+            <td>
               <input type="reset" value="Reset Data" />
-            </th>
-            <th style="border-style: solid; color: red; text-align: start">
-              <input
-                type="submit"
-                value="Sending Data"
-                style="color: red; background-color: yellow"
-              />
-            </th>
+            </td>
+            <td>
+              <input type="submit" value="Sending Data" />
+            </td>
           </tr>
         </table>
       </fieldset>
     </form>
+    <fieldset>
+      <legend>Waktu Tugas</legend>
+      <table>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="tugas_pagi"
+              id="tugas_pagi"
+              value="pagi"
+              form="proses_login"
+            />
+          </td>
+          <th style="text-align: start">
+            <label for="tugas_pagi">Morning Cashier </label>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="tugas_malam"
+              id="tugas_malam"
+              value="malam"
+              form="proses_login"
+            />
+          </td>
+          <th style="text-align: start">
+            <label for="tugas_malam">Night Cashier</label>
+          </th>
+        </tr>
+      </table>
+    </fieldset>
   </body>
 </html>
