@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Form</title>
+  </head>
+  <body>
+    <h1>8.13 Atribut Form</h1>
+    <!-- tag input dengan menambahkan atribut form kita bisa memproses data walaupun berada diluar blocking element dari tag form -->
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>Proses Login</legend>
+        <table>
+          <tr>
+            <th>
+              <label for="email">Email:</label>
+            </th>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                size="30"
+                placeholder="youremail@example.com"
+                autocomplete="off"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="password">Password:</label></th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                size="30"
+                placeholder="insert password here!"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <th style="border-style: solid">
+              <input type="reset" value="Reset Data" />
+            </th>
+            <th style="border-style: solid; color: red; text-align: start">
+              <input
+                type="submit"
+                value="Sending Data"
+                style="color: red; background-color: yellow"
+              />
+            </th>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

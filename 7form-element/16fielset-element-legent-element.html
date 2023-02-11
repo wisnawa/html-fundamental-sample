@@ -53,5 +53,86 @@
         </p>
       </fieldset>
     </form>
+    <!-- agar lebih rapi saya sarankan menggunakan table element sebagai blocking element -->
+    <br />===================================================================<br />
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>Data ID</legend>
+        <table>
+          <tr>
+            <th style="text-align: start"><label for="name">Name:</label></th>
+            <td>
+              <input type="text" name="name" id="name" size="30" autofocus />
+            </td>
+          </tr>
+          <tr>
+            <th style="text-align: start">
+              <label for="address">Address:</label>
+            </th>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Bidang Keahlian yang Dimiliki</legend>
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="skill1" id="skill1" value="HTML 5" />
+            </td>
+            <th style="text-align: start">
+              <label for="skill1">HTML 5</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="skill2" id="skill2" value="CSS" />
+            </td>
+            <th style="text-align: start"><label for="skill2">CSS</label></th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="skill3"
+                id="skill3"
+                value="Java Script"
+              />
+            </td>
+            <th style="text-align: start">
+              <label for="skill3">Java Script</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="skill4" id="skill4" value="MySql" />
+            </td>
+            <th style="text-align: start"><label for="skill4">MySql</label></th>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Button Process</legend>
+        <table>
+          <tr>
+            <td><input type="reset" value="Reset Data" /></td>
+            <td style="padding-left: 20px">
+              <input type="submit" value="Sending Data" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <br />==================================================================<br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
