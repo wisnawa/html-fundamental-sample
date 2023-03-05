@@ -65,7 +65,86 @@
               />
             </td>
             <td>
-              <input type="submit" value="Sending Data" />
+              <input type="submit" value="Sending Data Proses Form" />
+              <!-- atribut formaction akan memiliki type submit ke lain action atau mengarah ke window location yang lain -->
+              <input
+                type="submit"
+                value="Sending Data ke Register"
+                formaction="register.php"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <br />==========================================<br /><br />
+    <form action="formproses.php" method="get">
+      <fieldset>
+        <legend>Form Login</legend>
+        <table>
+          <tr>
+            <th style="text-align: start">
+              <label for="username">User:</label>
+            </th>
+            <td style="border-style: solid">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                size="30"
+                placeholder="input user"
+                autocomplete="off"
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="email">Email</label></th>
+            <td>
+              <input
+                type="email"
+                name="user-email"
+                id="email"
+                size="30"
+                placeholder="emailname@example.com"
+                autocomplete="off"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="password">Password:</label></th>
+            <td>
+              <input
+                type="password"
+                id="password"
+                placeholder="input password"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Input</legend>
+        <table>
+          <tr>
+            <td style="border-style: solid">
+              <input
+                type="reset"
+                value="Reset Data"
+                style="margin-left: 40px"
+              />
+            </td>
+            <td>
+              <input type="submit" value="Sending Data Proses Form" />
+              <!-- mirip dengan formaction, atribut formenctype, formmethod dan formtarget juga berfungsi sama, yakni mendefenisikan ulang atribut yang ada di dalam tag <form> -->
+              <input
+                type="submit"
+                value="Sending Data ke Register"
+                formaction="register.php"
+                formmethod="post"
+                formtarget="_blank"
+                formenctype="multipart/form-data"
+              />
             </td>
           </tr>
         </table>

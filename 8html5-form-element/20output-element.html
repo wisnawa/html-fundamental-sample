@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Output Element</title>
+  </head>
+  <body>
+    <h1>8.20 Output Element</h1>
+    <!-- ya, tag <output> digunakan sebagai penampung nilai keluaran (hasil) dari sebuah perhitungan. Karena HTML bukanlah bahasa pemrograman, tag ini hanya berguna jika digunakan bersama-sama dengan JavaScript atau PHP -->
+    <form action="formproses.php" method="get" onsubmit="return false">
+      <table>
+        <legend>Perkalian</legend>
+        <tr>
+          <th><label for="nil1">Nilai 1:</label></th>
+          <td><input type="number" id="nil1" /></td>
+        </tr>
+        <tr>
+          <th><label for="nil2">Nilai 2:</label></th>
+          <td><input type="number" id="nil2" /></td>
+        </tr>
+        <table>
+          <tr>
+            <th>
+              <button onclick="hitungKali()">Kali (x)</button>
+            </th>
+            <th>
+              <button onclick="hitungKurang()">Kurang (-)</button>
+            </th>
+            <th>
+              <button onclick="hitungPembagian()">Pembagian (/)</button>
+            </th>
+          </tr>
+        </table>
+        <tr>
+          <th><span>Hasil:</span></th>
+          <td><output id="hasil"></output></td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function hitungKali() {
+        var angka1 = document.getElementById("nil1").value;
+        var angka2 = document.getElementById("nil2").value;
+        var hasil = angka1 * angka2;
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+      function hitungKurang() {
+        var angka1 = document.getElementById("nil1").value;
+        var angka2 = document.getElementById("nil2").value;
+        var hasil = angka1 - angka2;
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+      function hitungPembagian() {
+        var angka1 = document.getElementById("nil1").value;
+        var angka2 = document.getElementById("nil2").value;
+        var hasil = angka1 / angka2;
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>
