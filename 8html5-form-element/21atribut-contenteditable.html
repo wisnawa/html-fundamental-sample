@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Contenteditable</title>
+  </head>
+  <body>
+    <h1>8.21 Atribut Contenteditable</h1>
+    <!-- Atribut contenteditable menyediakan fitur untuk membuat text editor sederhana di dalam web browser. Fitur seperti ini cocok dikombinasikan dengan JavaScript, sehingga teks bisa disimpan atau digunakan untuk keperluan lain-->
+    <p contenteditable="true" id="edit">Silahkan ketik diarea ini</p>
+    <button onclick="getText()">Hasil Teks ada di bawah</button>
+    <div style="margin-top: 16px; border-style: solid" id="container"></div>
+    <script>
+      function getText() {
+        var pNode = document.getElementById("edit").innerHTML;
+        document.getElementById("container").innerHTML = pNode;
+      }
+    </script>
+  </body>
+</html>
